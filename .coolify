@@ -1,0 +1,12 @@
+# Coolify Configuration for Static Pack Deployment
+
+# Build settings
+BUILD_COMMAND=npm run build
+BUILD_PATH=dist
+
+# Static pack configuration
+STATIC_PACK=true
+PORT=80
+
+# Environment variables (if needed)
+NODE_ENV=production
