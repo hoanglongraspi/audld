@@ -19,11 +19,9 @@ RUN npm run build
 # Production stage
 FROM nginx:alpine
 
-# Copy custom nginx configuration
+# Copy custom nginx configuration and mime types
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Ensure proper MIME types for JavaScript modules
-RUN echo 'application/javascript js mjs;' >> /etc/nginx/mime.types
+COPY mime.types /etc/nginx/mime.types
 
 # Copy built application from build stage
 COPY --from=build /app/dist /usr/share/nginx/html

@@ -108,6 +108,27 @@ Access at `http://localhost:3000`
 - Check asset paths in built files
 - Verify Nginx is serving static files correctly
 
+### MIME Type Issues (JavaScript Module Loading)
+If you see "Expected a JavaScript-or-Wasm module script but the server responded with a MIME type of 'application/octet-stream'":
+
+1. **Check MIME type response**:
+   ```bash
+   curl -I http://your-domain/assets/main.js
+   ```
+   Should return: `Content-Type: text/javascript`
+
+2. **Verify custom mime.types is being used**:
+   - The project includes a custom `mime.types` file
+   - Dockerfile copies it to `/etc/nginx/mime.types`
+   - Nginx config includes this file
+
+3. **Quick fix**: Add this to your nginx.conf if still having issues:
+   ```nginx
+   location ~* \.js$ {
+       add_header Content-Type "text/javascript" always;
+   }
+   ```
+
 ## 📊 Performance Optimizations
 
 - **Gzip compression** reduces transfer size
