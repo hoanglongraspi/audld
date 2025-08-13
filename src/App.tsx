@@ -38,7 +38,7 @@ function App() {
                 <a href="#why" className={`px-3 py-2 text-sm font-medium transition-colors ${scrollY > 50 ? 'text-[#032d4f]/80 hover:text-[#95b1ee]' : 'text-white/90 hover:text-[#95b1ee]'}`}>Why It Matters</a>
                 <a href="#solution" className={`px-3 py-2 text-sm font-medium transition-colors ${scrollY > 50 ? 'text-[#032d4f]/80 hover:text-[#95b1ee]' : 'text-white/90 hover:text-[#95b1ee]'}`}>Our Solution</a>
                 <a href="#benefits" className={`px-3 py-2 text-sm font-medium transition-colors ${scrollY > 50 ? 'text-[#032d4f]/80 hover:text-[#95b1ee]' : 'text-white/90 hover:text-[#95b1ee]'}`}>Key Benefits</a>
-                <a href="https://forms.gle/1KZwS4ycHxjAhsfN8" target="_blank" rel="noopener noreferrer" className={`px-6 py-2 rounded-full transition-colors ${scrollY > 50 ? 'bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/80' : 'bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/90'}`}>Join Waitlist</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSefoPfNw_EgICDDiSPj_fE_V48oujlK7JKjVndEYlHPVXmqkQ/viewform" target="_blank" rel="noopener noreferrer" className={`px-6 py-2 rounded-full transition-colors ${scrollY > 50 ? 'bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/80' : 'bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/90'}`}>Join Waitlist</a>
               </div>
             </div>
             
@@ -61,7 +61,7 @@ function App() {
               <a href="#why" className="block px-3 py-2 text-[#032d4f]/80 hover:text-[#95b1ee] hover:bg-[#95b1ee]/10 rounded-lg transition-colors">Why It Matters</a>
               <a href="#solution" className="block px-3 py-2 text-[#032d4f]/80 hover:text-[#95b1ee] hover:bg-[#95b1ee]/10 rounded-lg transition-colors">Our Solution</a>
               <a href="#benefits" className="block px-3 py-2 text-[#032d4f]/80 hover:text-[#95b1ee] hover:bg-[#95b1ee]/10 rounded-lg transition-colors">Key Benefits</a>
-              <a href="https://forms.gle/1KZwS4ycHxjAhsfN8" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/80 rounded-lg transition-colors mx-3 text-center">Join Waitlist</a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSefoPfNw_EgICDDiSPj_fE_V48oujlK7JKjVndEYlHPVXmqkQ/viewform" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 bg-[#95b1ee] text-[#032d4f] hover:bg-[#95b1ee]/80 rounded-lg transition-colors mx-3 text-center">Join Waitlist</a>
             </div>
           </div>
         )}
@@ -86,7 +86,7 @@ function App() {
           
           <div className="space-x-4">
             <button 
-              onClick={() => window.open('https://forms.gle/1KZwS4ycHxjAhsfN8', '_blank')}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSefoPfNw_EgICDDiSPj_fE_V48oujlK7JKjVndEYlHPVXmqkQ/viewform', '_blank')}
               className="bg-[#95b1ee] text-[#032d4f] px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#95b1ee]/90 transition-all transform hover:scale-105 inline-flex items-center"
             >
               Join the Waitlist <ArrowRight className="ml-2" size={20} />
@@ -279,7 +279,7 @@ function App() {
             
             <div className="max-w-md mx-auto">
               <button
-                onClick={() => window.open('https://forms.gle/1KZwS4ycHxjAhsfN8', '_blank')}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSefoPfNw_EgICDDiSPj_fE_V48oujlK7JKjVndEYlHPVXmqkQ/viewform', '_blank')}
                 className="bg-[#032d4f] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#032d4f]/90 transition-all transform hover:scale-105 inline-flex items-center"
               >
                 Join the Waitlist <ArrowRight className="ml-2" size={20} />
