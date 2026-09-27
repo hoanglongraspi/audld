@@ -19,6 +19,11 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      // The TypeScript preset currently enables a rule whose option schema is
+      // incompatible with this repo's ESLint 9 version. Keep the equivalent
+      // base rule disabled until the dependency versions are aligned.
+      'no-unused-expressions': 'off',
+      '@typescript-eslint/no-unused-expressions': 'off',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
